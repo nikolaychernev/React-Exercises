@@ -1,0 +1,11 @@
+.user {
+    border: 1px solid grey;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.user:hover {
+    cursor: pointer;
+    border: 1px solid #4b0b55;
+}

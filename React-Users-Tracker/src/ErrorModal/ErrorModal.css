@@ -1,0 +1,27 @@
+#error-modal {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 0.5rem;
+    width: 35%;
+    overflow: hidden;
+}
+
+#title {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: #4b0b55;
+}
+
+#title, #content {
+    padding: 1rem;
+}
+
+#error-modal button {
+    display: block;
+    margin-top: 2rem;
+    margin-left: auto;
+}
