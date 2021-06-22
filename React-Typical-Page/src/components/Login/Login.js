@@ -1,12 +1,13 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 
 import Card from '../UI/Card/Card';
 import classes from './Login.module.css';
 import Button from '../UI/Button/Button';
+import AuthContext from "../../store/auth-context";
 
 const initialValue = {value: "", isValid: true};
 
-const Login = (props) => {
+const Login = () => {
     const [emailState, setEmailState] = useState(initialValue);
     const [passwordState, setPasswordState] = useState(initialValue);
     const [formIsValid, setFormIsValid] = useState(false);
@@ -41,9 +42,11 @@ const Login = (props) => {
         });
     };
 
+    const ctx = useContext(AuthContext);
+
     const submitHandler = (event) => {
         event.preventDefault();
-        props.onLogin(emailState.value, passwordState.value);
+        ctx.onLogin(emailState.value, passwordState.value);
     };
 
     return (
