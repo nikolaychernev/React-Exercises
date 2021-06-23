@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useContext} from 'react';
+import React, {useState, useEffect, useContext, useRef} from 'react';
 
 import Card from '../UI/Card/Card';
 import classes from './Login.module.css';
@@ -45,20 +45,30 @@ const Login = () => {
 
     const ctx = useContext(AuthContext);
 
+    const emailInputRef = useRef();
+    const passwordInputRef = useRef();
+
     const submitHandler = (event) => {
         event.preventDefault();
-        ctx.onLogin(emailState.value, passwordState.value);
+
+        if (formIsValid) {
+            ctx.onLogin(emailState.value, passwordState.value);
+        } else if (!emailState.isValid) {
+            emailInputRef.current.focus();
+        } else {
+            passwordInputRef.current.focus();
+        }
     };
 
     return (
         <Card className={classes.login}>
             <form onSubmit={submitHandler}>
-                <Input type={"email"} id={"email"} value={emailState.value} isValid={emailState.isValid}
-                       onChange={emailChangeHandler} label={"E-Mail"}/>
-                <Input type={"password"} id={"password"} value={passwordState.value} isValid={passwordState.isValid}
-                       onChange={passwordChangeHandler} label={"Password"}/>
+                <Input ref={emailInputRef} type={"email"} id={"email"} value={emailState.value}
+                       isValid={emailState.isValid} onChange={emailChangeHandler} label={"E-Mail"}/>
+                <Input ref={passwordInputRef} type={"password"} id={"password"} value={passwordState.value}
+                       isValid={passwordState.isValid} onChange={passwordChangeHandler} label={"Password"}/>
                 <div className={classes.actions}>
-                    <Button type="submit" className={classes.btn} disabled={!formIsValid}>
+                    <Button type="submit" className={classes.btn}>
                         Login
                     </Button>
                 </div>
