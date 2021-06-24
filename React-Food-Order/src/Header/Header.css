@@ -8,13 +8,9 @@
     justify-content: space-between;
 }
 
-#logo {
-    margin: 0;
-}
-
 #card {
     background-color: #441601;
-    padding: 1rem 3rem;
+    padding: 1rem 2.5rem;
     border-radius: 15px;
     display: flex;
     align-items: center;
