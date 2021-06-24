@@ -11,7 +11,7 @@
 #card {
     background-color: #441601;
     padding: 1rem 2.5rem;
-    border-radius: 15px;
+    border-radius: 30px;
     display: flex;
     align-items: center;
 }
@@ -24,5 +24,5 @@
 #items-count {
     background-color: #af3c16;
     padding: 0.3rem 0.8rem;
-    border-radius: 15px;
+    border-radius: 30px;
 }
