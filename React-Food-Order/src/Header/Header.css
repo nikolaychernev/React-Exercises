@@ -1,0 +1,32 @@
+#header {
+    height: 5rem;
+    background-color: #7e2606;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    margin: 0;
+}
+
+#card {
+    background-color: #441601;
+    padding: 1rem 3rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#card-text {
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+}
+
+#items-count {
+    background-color: #af3c16;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+}
