@@ -103,77 +103,74 @@ dist
 # TernJS port file
 .tern-port
 
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
-# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
-
-# User-specific stuff
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/**/usage.statistics.xml
-.idea/**/dictionaries
-.idea/**/shelf
-
-# AWS User-specific
-.idea/**/aws.xml
-
-# Generated files
-.idea/**/contentModel.xml
-
-# Sensitive or high-churn files
-.idea/**/dataSources/
-.idea/**/dataSources.ids
-.idea/**/dataSources.local.xml
-.idea/**/sqlDataSources.xml
-.idea/**/dynamic.xml
-.idea/**/uiDesigner.xml
-.idea/**/dbnavigator.xml
-
-# Gradle
-.idea/**/gradle.xml
-.idea/**/libraries
-
-# Gradle and Maven with auto-import
-# When using Gradle or Maven with auto-import, you should exclude module files,
-# since they will be recreated, and may cause churn.  Uncomment if using
-# auto-import.
-# .idea/artifacts
-# .idea/compiler.xml
-# .idea/jarRepositories.xml
-# .idea/modules.xml
-# .idea/*.iml
-# .idea/modules
-# *.iml
-# *.ipr
-
-# CMake
-cmake-build-*/
-
-# Mongo Explorer plugin
-.idea/**/mongoSettings.xml
-
-# File-based project format
+# IntelliJ IDEA and Other JetBrains IDEs
+.idea/
+*.iml
 *.iws
+*.ipr
 
-# IntelliJ
-out/
-
-# mpeltonen/sbt-idea plugin
 .idea_modules/
+out/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
 
-# JIRA plugin
-atlassian-ide-plugin.xml
+.idea/shelf/
+.idea/contentModel.xml
+.idea/dataSources/
+.idea/dataSources.xml
+.idea/dataSources.ids
 
-# Cursive Clojure plugin
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+.idea/gradle.xml
+
+.idea/libraries
+.idea/deployment.xml
+.idea/mongoSettings.xml
+.idea/httpRequests
+.idea/caches/
+
+.idea/modules.xml
+.idea/compiler.xml
+.idea/jarRepositories.xml
+.idea/artifacts
+.idea/sonarlint/
+
+*.iml.bak
+*.ipr.bak
+*.iws.bak
+.idea_backup/
 .idea/replstate.xml
 
-# Crashlytics plugin (for Android Studio and IntelliJ)
+.idea/checkstyle-idea.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+
+.idea/assetWizardSettings.xml
+.idea/kotlinc.xml
+.idea/inspectionProfiles/
+.idea/codestream.xml
+.idea/aws.xml
+
+.idea/sonarIssues.xml
+.idea/.gitignore
+.idea/remote-mappings.xml
+.idea/**/usage.statistics.xml
+.idea/**/contentModel.xml
+
+.idea/**/dbnavigator.xml
+.idea/**/markdown-navigator.xml
+.idea/**/markdown-navigator-enh.xml
+.idea/**/markdown-navigator/
+.idea/$CACHE_FILE$
+
+.idea/**/azureSettings.xml
 com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
-
-# Editor-based Rest Client
-.idea/httpRequests
-
-# Android studio 3.1+ serialized cache file
-.idea/caches/build_file_checksums.ser
