@@ -28,10 +28,10 @@ const INITIAL_USER_INPUT = {
 function App() {
     const [userInput, setUserInput] = useState(INITIAL_USER_INPUT);
 
-    function handleInputChange(event) {
+    function handleInputChange(id, value) {
         setUserInput(prevUserInput => {
             const prevUserInputCopy = JSON.parse(JSON.stringify(prevUserInput));
-            prevUserInputCopy[event.target.id].value = parseInt(event.target.value);
+            prevUserInputCopy[id].value = parseInt(value);
 
             return prevUserInputCopy;
         });
